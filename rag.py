@@ -113,7 +113,6 @@ def generate_plan(retriever, p: UserProfile):
     t1 = time.perf_counter()
     prompt = _create_prompt(_build_question(p), contexts)
 
-    # ---- Call the model (chat first, then text) ----
     try:
         text = (_call_chat(prompt) or "").strip()
         if not text:
@@ -140,12 +139,10 @@ def generate_plan(retriever, p: UserProfile):
 
     t2 = time.perf_counter()
 
-    # ---- Coerce trailing JSON block if the model wrapped it in text ----
     m = _json_block.search(text)
     if m:
         text = m.group(0)
 
-    # ---- Parse JSON or fall back to a structured envelope ----
     try:
         data = json.loads(text)
     except Exception:
