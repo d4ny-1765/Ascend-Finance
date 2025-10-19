@@ -1,0 +1,40 @@
+{
+  "quiz": {
+    "name": "Alex",
+    "age": 26,
+    "employment_tenure": "3-12 months",
+    "state": "NC",
+    "salary": 72000,
+    "marital_status": "Single",
+    "help_type": "employer_retirement",
+    "top_concerns": [
+      "Understanding my company's benefits (insurance, 401k)",
+      "Saving for a big purchase (car, down payment)"
+    ],
+    "risk_tolerance": "medium"
+  },
+  "form": {
+    "cashflow": {
+      "monthly_take_home_pay": 3800,
+      "monthly_expenses": 2900,
+      "current_savings": 4500,
+      "notes": "Student loan starts in 3 months."
+    },
+    "benefits": {
+      "employer_offers_health_insurance": true,
+      "enrolled_in_health_insurance": "Yes, I'm enrolled",
+      "monthly_premium": 160,
+      "employer_contributes_hsa_or_fsa": false,
+      "employer_offers_retirement_plan": true,
+      "employer_plan_options": ["401k", "roth_401k"],
+      "employer_match_percent": 4,
+      "contributing_now": true,
+      "current_monthly_contribution": 250
+    },
+    "savings_goal": {
+      "what_are_you_saving_for": "Car down payment",
+      "target_amount": 8000,
+      "timeline_months": 12
+    }
+  }
+}
